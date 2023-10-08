@@ -1,16 +1,7 @@
 .App {
+  margin: 0 auto;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  width: 500px;
 }
 
 .App-header {
@@ -24,15 +15,92 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  cursor: pointer;
+}
+
+.filter-button {
+  margin-right: 8px;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  border-bottom: 2px solid blue; /* Màu và kích thước gạch dưới khi tab được chọn */
+  color: blue; /* Màu chữ khi tab được chọn */
+}
+
+.section--input {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.section--input input {
+  width: 380px;
+  border-radius: 4px;
+  height: 20px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.section--input button {
+  height: 45px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: #fff;
+}
+
+.section--todo-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.section--todo-list ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.btn-delete {
+  background-color: none;
+}
+
+.btn--delete-all {
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.delete-all {
+  margin-top: 10px;
+  text-align: end;
+}
+
+hr {
+  margin: 0;
 }
